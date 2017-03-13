@@ -3,13 +3,19 @@
   padding: 0;
 }
 body {
-  font-family: Tahoma,Arial,Verdana,sans-serif;
-}
-.big-container {
-  background-image: url("/images/background.jpg");
+  background-image: url("/bing/images/background.jpg");
   background-size: cover;
   height: 100vh;
+  font-family: Tahoma,Arial,Verdana,sans-serif;
   width: 100%;
+}
+.big-container {
+  background-color: transparent;
+  height: 100vh;
+  transition: background-color 200ms linear;
+}
+.big-container.overlay {
+  background-color: rgba(0, 0, 0, .55);
 }
 .top-menu {
   background-color: #333333;
@@ -35,4 +41,75 @@ body {
 }
 .main-menu__item a:hover {
   color: white;
+}
+.search-box {
+  position: absolute;
+  top: 19%;
+  left: 8%;
+  width: 1028px;
+  margin: 0;
+  z-index: 9;
+}
+.bing-logo {
+  background-image: url("/bing/images/second_sprites.png");
+  display: inline-block;
+  width: 132px;
+  height: 52px;
+}
+.query-form {
+  display: flex;
+  align-items: flex-end;
+}
+.query-input {
+  background-color: #fff;
+  box-sizing: border-box;
+  font-size: 16px;
+  height: 45px;
+  margin: 6px 1px 0 21px;
+  padding: 0 4px 0 9px;
+  width: 487px;
+}
+.submit-btn {
+  background: #0c8484 url("/bing/images/second_sprites.png") no-repeat;
+  background-position: -169px -63px;
+  border: 8px solid #0c8484;
+  cursor: pointer;
+  height: 45px;
+  vertical-align: top;
+  width: 45px;
+}
+.footer {
+  background-color: #333;
+  bottom: 0;
+  height: 35px;
+  left: 0;
+  position: absolute;
+  text-align: right;
+  width: 100%;
+}
+.footer-menu {
+  padding-right: 21px;
+  position: relative;
+  top: 5px;
+}
+.footer-menu__item {
+  display: inline;
+}
+.footer-menu__item .link {
+  color: #666;
+  font-size: 13px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.footer-menu__item .link:hover {
+  text-decoration: underline;
+}
+.footer-menu__item:not(:last-child) .link:after {
+  bottom: 1px;
+  content: "|";
+  left: 13px;
+  position: relative;
+}
+.footer-menu__item .link.comments {
+  color: #999;
 }
