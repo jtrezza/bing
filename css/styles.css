@@ -19,9 +19,12 @@ body {
 }
 .top-menu {
   background-color: #333333;
+  display: flex;
   height: 43px;
+  justify-content: space-between;
 }
 .main-menu {
+  display: inline-block;
   margin-left: 28px;
 }
 .main-menu__item {
@@ -67,7 +70,7 @@ body {
   height: 45px;
   margin: 6px 1px 0 21px;
   padding: 0 4px 0 9px;
-  width: 487px;
+  width: 500px;
 }
 .submit-btn {
   background: #0c8484 url("/bing/images/second_sprites.png") no-repeat;
@@ -112,4 +115,103 @@ body {
 }
 .footer-menu__item .link.comments {
   color: #999;
+}
+.user-menu {
+  display: inline-block;
+}
+.user-menu__item {
+  display: inline;
+}
+.user-menu__item .link {
+  color: #acacac;
+  font-size: 13px;
+  line-height: 40px;
+  padding: 0 10px;
+  text-decoration: none;
+}
+.preferences-icon {
+  background: url("/bing/images/second_sprites.png") no-repeat;
+  background-position: -192px -149px;
+  background-size: 241px 223px;
+  border: none;
+  display: inline-block;
+  height: 16px;
+  margin: 0 42px 15px 9px;
+  position: relative;
+  top: 3px;
+  vertical-align: bottom;
+  width: 20px;
+}
+.user-icon {
+  background: url("/bing/images/second_sprites.png") no-repeat;
+  background-color: #555;
+  background-position: -6px -116px;
+  background-size: 193px 179px;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  height: 32px;
+  position: relative;
+  top: -2px;
+  vertical-align: bottom;
+  width: 32px;
+}
+.photo-credit__list:hover .photo-info {
+  display: inline-block;
+}
+.photo-credit__list {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+}
+.photo-credit__button {
+  cursor: pointer;
+  display: inline;
+  height: 40px;
+  margin-left: -4px;
+  width: 40px;
+}
+.photo-credit__icon {
+  background: url("/bing/images/second_sprites.png") no-repeat;
+  background-color: rgba(34,34,34,.75);
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+}
+.photo-credit__icon.camera {
+  background-position: -84px -98px;
+}
+.photo-credit__icon.left {
+  background-position: -122px -57px;
+}
+.photo-credit__icon.right {
+  background-position: -85px -139px;
+}
+.photo-info {
+  width: 260px;
+  height: 178px;
+  position: absolute;
+  display: inline-block;
+  background-color: rgba(0,0,0,.6);
+  bottom: -5px;
+  right: -20px;
+}
+.photo-info {
+  display: none;
+  list-style: none;
+}
+.photo-info__author {
+  color: #aaa;
+  font-family: Arial,Helvetica,Sans-Serif;
+  font-size: 13px;
+  margin: 5px 15px 0;
+}
+.photo-info__description {
+  color: #ddd;
+  font-family: Arial,Helvetica,Sans-Serif;
+  font-size: 22px;
+  font-weight: 100;
+  margin: 15px 15px 0;
 }
